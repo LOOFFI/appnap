@@ -1,38 +1,601 @@
-.App {
-  text-align: center;
+body {
+  left: 0;
+  top: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* >>>>>>>> HEADER <<<<<<< */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  height: 70px;
+  padding: 60px;
+}
+
+.header h2 {
+  padding-left: 50px;
+  font-size: 1.5em;
+}
+
+.header a {
+  text-decoration: none;
+  color: #3d3d3c;
+  padding: 15px;
+}
+
+a.active {
+  color: #99a7c4;
+  border-color: #99a7c4;
+}
+
+.header .btn-outline-primary {
+  color: #131c25;
+  background-color: transparent;
+  background-image: none;
+  border-color: #131c25;
+  margin: 0px 30px;
+  border-radius: 25px;
+  padding: 10px 30px;
+}
+
+.header button:active {
+  color: #99a7c4;
+  border-color: #99a7c4;
+}
+
+button.btn.btn-outline-primary:active {
+  color: #99a7c4;
+  border-color: #99a7c4;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none;
+}
+
+.btn-outline-primary.focus,
+.btn-outline-primary:focus {
+  box-shadow: none;
+}
+
+.header .btn-outline-primary:hover {
+  background-color: white;
+  border-color: #99a7c4;
+  color: #99a7c4;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+  background-color: white;
+  border-color: #99a7c4;
+  color: #99a7c4;
+}
+
+.btn-outline-primary a:hover {
+  color: #99a7c4;
+  border-color: #99a7c4;
+}
+
+.header img {
+  width: 150px;
+}
+
+img.navbar-brand {
+  margin-left: 30px;
+}
+
+.border-dark {
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: #3d3d3c;
+  height: 5px;
+}
+
+.border-light {
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: #99a7c4;
+  height: 5px;
+}
+
+/* >>>>>>> FOOTER <<<<<<< */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3d3d3c;
+  color: white;
+  height: 70px;
+  padding: 20px 85px;
+}
+
+.footer h2 {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.footer img {
+  width: 10%;
+}
+
+/* >>>>>>>>>> HOME PAGE <<<<<<<<<<< */
+
+/* welcome section */
+
+.booking h3 {
+  /* margin: 50px; */
+  font-size: 50px;
+  color: #99a7c4;
+}
+
+.booking p {
+  color: #131c25;
+  font-size: 20px;
+}
+
+#negative {
+  color: #99a7c4;
+}
+
+.welcome-hp {
+  text-align: center;
+  background-color: white;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.welcome-hp h2 {
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hp-btn span {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.welcome-hp a {
+  text-decoration: none;
+  color: white;
+}
+
+.welcome-hp a:hover {
+  color: white;
+}
+
+.welcome-hp .btn-white {
+  color: white;
+  border-color: white;
+  border-radius: 40px;
+  margin-top: 15px;
+  padding: 10px 30px;
+}
+
+.welcome-hp button:hover {
+  color: white;
+  background-color: #99a7c4;
+  border-color: #99a7c4;
+}
+
+.btn-dark {
+  color: #3f506c;
+  border-color: #3f506c;
+  border-radius: 40px;
+  margin-top: 20px;
+  padding: 10px 30px;
+}
+
+.booking .booking-cards .card {
+  padding: 15px;
+}
+
+.btn-dark:hover {
+  color: #99a7c4;
+  border-color: #99a7c4;
+  background-color: white;
+}
+
+.hp-btn {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 120px;
+}
+
+.hp-btn p {
+  font-size: 18px;
+}
+
+.hp-card {
+  width: 18rem;
+  border-style: none;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.list-group-item .fa-check {
+  color: #3f506c;
+  margin-right: 10px;
+}
+
+.list-group-item {
+  color: #3d3d3c;
+}
+
+.card-link:hover {
+  color: #99a7c4;
+}
+
+/* concept section */
+.concept {
+  background-color: #fbfbfb;
+  padding: 40px;
+  text-align: center;
+  height: 700px;
+  color: #3d3d3c;
+}
+
+.concept img {
+  height: 200px;
+}
+
+.concept h4 {
+  margin-top: 40px;
+  font-size: 50px;
+  padding: 0;
+}
+
+.concept h5 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+div.card.concept-card {
+  background-color: #fbfbfb;
+  border-style: none;
+}
+
+.concept-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.concept-card {
+  width: 300px;
+}
+
+.concept-card .fas {
+  margin-right: 10px;
+  color: #3f506c;
+}
+
+.concept p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #3d3d3c;
+}
+
+/* benefits area */
+.nap-benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 80px;
+}
+
+.benefits-img img {
+  width: 650px;
+  padding: 60px;
+  margin-top: 50px;
+}
+
+.benefits-info span {
+  color: #99a7c4;
+}
+
+.benefits-info {
+  color: #3d3d3c;
+  padding: 60px;
+  width: 50%;
+}
+
+.benefits-info ul {
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.benefits-info p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.benefits-info h4 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 50px;
+  padding: 0;
+}
+
+.benefits-info h5 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* >>>>>>>>>> LOCATIONS <<<<<<<<<<< */
+
+.loc-section {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.loc-section h2 {
+  margin-bottom: 50px;
+  color: #3d3d3c;
+}
+
+.locations {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.card-loc {
+  width: 300px;
+  height: 400px;
+  display: inline-block;
+  margin-bottom: 50px;
+  border-style: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-loc:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.img-loc {
+  height: 170px;
+}
+
+.wprock-img-zoom-hover .wprock-img-zoom {
+  overflow: hidden;
+  position: relative;
+}
+
+.wprock-img-zoom-hover .wprock-img-zoom .img-loc {
+  max-width: 100%;
+  max-height: 170px;
+  transition: all 0.8s;
+}
+
+.wprock-img-zoom-hover .wprock-img-zoom * {
+  box-sizing: border-box;
+}
+
+.wprock-img-zoom-hover:hover .wprock-img-zoom .img-loc {
+  transform: scale(1.16);
+}
+
+.fa-phone {
+  margin-right: 10px;
+  color: #3f506c;
+}
+
+/* >>>>>>>>>> BOOKING DATE <<<<<<<<<<< */
+
+.booking-date2 {
+  display: inline-flex;
+  margin: 50px 200px;
+}
+
+.booking-date2 h2 {
+  color: #3d3d3c;
+}
+
+.day-picker {
+  margin-right: 100px;
+}
+
+.table-drag-select td.cell-being-selected {
+  background-color: #99a7c4;
+}
+
+.date-time {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* >>>>>>>>>> OPTIONS <<<<<<<<<<< */
+
+.option-section h2 {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #3d3d3c;
+}
+
+.option-btn {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.options2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.sounds,
+.blankets,
+.juices {
+  width: 400px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.plaid-input input {
+  margin-right: 15px;
+}
+
+.sound-input input {
+  margin-right: 15px;
+}
+
+.shotbox {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.juice-label {
+  flex: auto;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.juices-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.juices-input p {
+  margin-bottom: 0;
+}
+
+.juices-input label {
+  margin-bottom: 0;
+}
+
+.juices legend {
+  margin-bottom: 20px;
+}
+
+.option-title {
+  color: #99a7c4;
+  letter-spacing: 6px;
+  text-align: left;
+}
+
+small {
+  padding-left: 35px;
+}
+
+.price {
+  color: #3f506c;
+  font-size: 16px;
+}
+
+.no-price {
+  margin-bottom: 10px;
+}
+
+/* >>>>>>>>>> PAYMENT <<<<<<<<<<< */
+
+.payment-sec {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.payment-sec h2 {
+  margin-bottom: 30px;
+  color: #3d3d3c;
+}
+
+.payment-section {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.payment-pic {
+  width: 675px;
+}
+
+.payment-img {
+  width: 110%;
+  margin-bottom: 20px;
+}
+
+.prices.card {
+  border-style: none;
+  width: 300px;
+}
+
+.card-header {
+  margin-bottom: 12px;
+}
+
+.card-header h3 {
+  text-align: left;
+  letter-spacing: 5px;
+  font-size: 16px;
+  color: #99a7c4;
+}
+
+.payment-sec .card-text {
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-align: left;
+}
+
+.card-total {
+  letter-spacing: 6px;
+  font-size: 16px;
+}
+
+.order-total {
+  color: #99a7c4;
+  text-align: left;
+}
+
+.card-total .card-text {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+/* >>>>>>>>>> Home page bookings <<<<<<<<<<< */
+
+.booking {
+  margin: 70px 0;
+}
+
+.booking-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.booking-cards .card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.booking-cards .card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card-title {
+  color: #3d3d3c;
 }
