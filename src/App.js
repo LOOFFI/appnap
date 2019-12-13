@@ -10,9 +10,8 @@ import Login from "./components/Login";
 import Booking from "./components/Booking";
 import Payment from "./components/Payment";
 import MyAccount from "./components/MyAccount";
-import AdminPage from "./components/AdminPage";
 import "./App.css";
-import "./Auth.css";
+import "./auth.css";
 
 class App extends Component {
   constructor(props) {
@@ -83,10 +82,6 @@ class App extends Component {
                 onLogin={userDoc => this.setState({ currentUser: userDoc })}
               />
             )}
-          />
-          <Route
-            exact path="/admin"
-            render={() => <AdminPage currentUser={currentUser} />}
           />
           <Route
             exact path="/booking"
